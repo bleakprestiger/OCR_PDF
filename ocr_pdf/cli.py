@@ -73,10 +73,8 @@ def cli(ctx: click.Context, verbose: bool) -> None:  # noqa: ARG001 — required
 )
 @click.option(
     "--threads", "-j",
-    type=int,
+    type=click.IntRange(1, _MAX_THREADS),
     default=_DEFAULT_THREADS,
-    min=1,
-    max=_MAX_THREADS,
     help=f"Parallel threads per file (1-{_MAX_THREADS}). Default: {_DEFAULT_THREADS}.",
 )
 @click.option(
@@ -157,10 +155,8 @@ def ocr(
 )
 @click.option(
     "--threads", "-j",
-    type=int,
+    type=click.IntRange(1, _MAX_THREADS),
     default=_DEFAULT_THREADS,
-    min=1,
-    max=_MAX_THREADS,
     help=f"Parallel threads per file (1-{_MAX_THREADS}). Default: {_DEFAULT_THREADS}.",
 )
 @click.option(
