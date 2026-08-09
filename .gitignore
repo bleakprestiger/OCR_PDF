@@ -1,0 +1,43 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and runtime artifacts
+logs/
+*.log
+
+# Temporary / sandbox PDFs (test outputs)
+*_searchable.pdf
+*_ocr.pdf
+temp_*.pdf
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# OS-generated metadata
+.DS_Store
+Thumbs.db
+desktop.ini
